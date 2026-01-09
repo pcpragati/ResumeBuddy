@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Upload, Sparkles, FileText, Flame, Check, AlertCircle, Zap } from 'lucide-react';
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
   const [file, setFile] = useState(null);
